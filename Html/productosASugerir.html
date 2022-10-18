@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/styleGeneral.css" type="text/css">
+    <link rel="stylesheet" href="../Styles/styleForm.css" type="text/css">
+    <script src="../JavaScript/validationsGeneral.js"></script>
+    <script src="../JavaScript/javaScript.js"> </script>
+    <title>Productos a sugerir</title>
+    <link rel="icon" href="../img/icono.png">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navegacion">
+            <ul class="menu">
+                <a class="logo" href="../index.html"><img src="../img/logo.png" width="150" height="40" alt="Logo"></a>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../Html/nosotros.html">NOSOTROS</a></li>
+                <li><a href="#">CATEGORIAS</a>
+                    <ul class="submenu">
+                        <li><a href="../Html/EscrituraYCuadernos.html">Escritura y Cuadernos</a></li>
+                        <li><a href="../Html/detallesyRegalos.html">Detalles y Regalos</a></li>
+                        <li><a href="../Html/OficinaYCarpetas.html">Oficina y Carpetas</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Html/contactos.html">CONTACTOS</a></li>
+                <li><a href="#">CLIENTE</a>
+                    <ul class="submenu">
+                        <li><a href="../Html/servicioCliente.html">Servicio al cliente</a></li>
+                        <li><a href="../Html/productosASugerir.html">Productos a sugerir</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Html/login.html">INGRESAR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <div class="image-comment" id="open">
+        <picture>
+            <a href="javascript:open()"><img src="../img/comentario.svg" alt="comentario"></a>
+        </picture>
+    </div>
+
+    <div class="form-comment" id="window-comment">
+        <div class="color-title-comment">
+            <h2 class="title-comment">¡Envíenos sus comentarios!</h3>
+        </div> <br>
+        <div class="close-window" id="close-window">
+            <a href="javascript:close()"><img src="../img/cerrar-ventana.png"
+                    alt="cerrar formulario de comentarios"></a>
+        </div>
+        <form>
+            ¿Conseguiste tu objetivo?
+            <div class="container">
+                <div class="container-left">
+                    <input type="radio" name="goal" value="si"> Sí
+                </div>
+                <div class="comment-center">
+                    <input type="radio" name="goal" value="parcialmente"> Parcialmente
+                </div>
+                <div class="comment-righ">
+                    <input type="radio" name="goal" value="no"> No
+                </div>
+            </div>
+
+            ¿Cuál fue el motivo de su visita?
+            <div class="select-reason">
+                <select name="reason">
+                    <option value="None">--- Seleccionar ---</option>
+                    <option value="porque un amigo me recomendo el sitio">Porque un amigo me recomendó el sitio</option>
+                    <option value="para comprar algo">Para comprar algo</option>
+                    <option value="mirar listas de precios">Mirar listas de precios</option>
+                    <option value="otra">Otra</option>
+
+                </select>
+            </div>
+
+            ¿Tiene alguna sugerencia para mejorar el sitio web?
+            <div class="text-suggestion">
+                <textarea name="suggestion" id="suggestion" cols="38" rows="5" placeholder="Escriba aquí"
+                    onchange="return validateSuggestion()"></textarea>
+            </div>
+            <div class="button-save">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <h1>Productos a sugerir</h1>
+    <br>
+    <form class="form-login">
+        <label for="nameProduct">Nombre del producto:</label>
+        <input class="controls" type="text" name="nameProduct" id="nameProduct" onchange="return validatenameProduct()"
+            placeholder="Ingrese el nombre del producto a sugerir">
+        <label for="Nombre">Nombre:</label>
+        <input class="controls" type="text" name="nameClient" id="nameClient" onchange="return validateNameClient()"
+            placeholder="Ingrese su nombre">
+        <label for="apellido">Apellido:</label>
+        <input class="controls" type="text" name="lastName" id="lastName" onchange="return validateLastName()"
+            placeholder="Ingrese su apellido">
+        <label for="correoElectrónico">Correo electrónico:</label>
+        <input class="controls" type="email" name="email" id="email" onchange="return validateEmail()"
+            placeholder="Ingrese su correo electrónico">
+        <button class="buttons" id="login" type="submit">Guardar</button>
+    </form>
+
+</body>
+
+</html>

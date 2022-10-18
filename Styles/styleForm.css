@@ -1,0 +1,130 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: midnightblue;
+
+}
+
+.form-login {
+    width: 400px;
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+
+}
+.form-login
+{
+    width: 430px;
+    background-color: rgb(235, 235, 172);
+    padding: 30px;
+    margin: auto;
+    margin-top: 15px;
+    /* arriba*/
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: black;
+    box-shadow: 7px 13px 37px #000;
+    font-weight: bolder;
+}
+
+.form-register {
+    display: flex;
+    align-items: flex-end;
+}
+
+.containerF button {
+    width: 36%;
+}
+
+.containerF {
+    width: 700px;
+    background-color: rgb(235, 235, 172);
+    padding: 30px;
+    margin: auto;
+    margin-top: 15px;
+    /* arriba*/
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: black;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register .controls {
+    width: 80%;
+    background: rgb(235, 235, 172);
+    padding: 10px;
+    margin-bottom: 7px;
+    /* arriba, derecha, abajo, izquierda */
+
+}
+
+.form-rows {
+    width: 150%;
+    font-weight: bolder;
+}
+
+.form-rows textarea {
+    height: 76px;
+    resize: none;
+}
+
+.form-rows label {
+    margin: 20px;
+}
+
+.form-login .buttons {
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: rgb(235, 235, 172);
+    padding: 10px;
+    margin-bottom: 7px;
+    /* arriba, derecha, abajo, izquierda */
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: black;
+    font-size: 18px;
+}
+
+.form-login a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+#login {
+    color: white;
+}
+
+/* From uiverse.io */
+.buttons {
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+    color: #000;
+    background-color: rgb(161, 173, 108);
+    border: none;
+    border-radius: 45px;
+    transition: all 0.9s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons:hover {
+    background-color: #d48c8c;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    transform: translateY(-5px);
+}
+

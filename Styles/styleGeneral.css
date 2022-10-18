@@ -1,0 +1,314 @@
+body
+{
+   background-color: rgb(231, 231, 176);   
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Menu principal*/
+nav ul 
+{
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  font-size: 20px;
+}
+
+nav ul li 
+{
+	display: inline-block;
+	padding: 10px;
+}
+
+ul li a
+{
+	text-decoration: none;
+	color: rgb(13, 73, 70);	
+  
+} 
+
+.portada{
+	width: 100%;
+	height: auto;
+}
+
+header{
+  font-family: Helvetica;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px #999;
+}
+
+.navegacion{
+	background-color: beige;
+}
+
+.navegacion ul{
+	list-style: none;
+	text-align: center;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 20px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.menu li:hover{
+	color: #ffffff;
+	transition: all .3s;
+	background-color: rgb(231, 231, 176);
+}
+
+/* Parrafos*/
+
+table td 
+{
+  color:black;
+  font-family: "Arial", serif;
+}
+
+#main{
+  background-color: white;
+}
+
+h1, h2
+{
+  text-align: center;
+  color:palevioletred;
+}
+
+h3
+{
+	color: green;
+}
+
+p{
+  text-align: justify;
+}
+
+figure {
+  position: relative;
+  text-align: center;
+}
+ 
+figure:before, figure:after {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+ 
+#image-store {
+  width: 60%;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+.contac {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.infor {
+	padding: 10px;
+	line-height: 30px;
+	margin: 0 auto;
+}
+
+table {
+	margin: 0 auto;
+}
+
+.table-contact {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.table-contact td {
+	font-family:"Constantia", serif;
+	width: 30%;
+}
+/*Produtos Principales*/
+
+.table{
+	width: 80%;
+	height: auto;
+}
+
+.table-office {
+	text-align: center;
+	width: 80%;
+	margin: 9 auto;
+  }
+  table hr {
+	height: 1px;
+	width: 90%;
+  }
+  
+  .image-product {
+	width: 120px;
+	height: 150px;
+  }
+
+  .line{
+	background: black;
+	 width:12%;
+	 text-align: center;
+	 margin: 0 auto;
+	 height: 5px;
+  }
+  
+  /* Comenarios */
+
+.image-comment picture img {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	height: 4rem;
+}
+
+.close-window img {
+	width: 25px;
+	position: fixed;
+	right: 23px;
+	bottom: 408px;
+}
+
+.form-comment {
+	width: 25%;
+	background-color:#ffffff;
+	padding: 10px;
+	right: 5px;
+	bottom: 80px;
+	position: fixed;
+	border-radius: 20px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	display: none;
+}
+
+.title-comment{
+	font-family: Helvetica;
+	font-size: 20px;
+	text-align: left;
+	color: rgb(18, 14, 19);
+	margin: 0 auto;
+}
+
+.comment-goal {
+	width: 55%;
+	padding: 10px;
+	right: 5px;
+	bottom: 80px;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.container {
+	text-align: center;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.container-left{
+	float: left;
+	margin: 0 auto;
+}
+                              
+.comment-center{
+	display: inline-block
+}                        
+
+.comment-righ {
+	float: right;
+}
+
+.botton-comment {
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.select-reason {
+	text-align: center;
+	padding: 8px;
+}
+
+.select-reason select{
+	background-color: #bfca82;
+	height: 25px;
+	margin: auto;
+	/* text-align: center; */
+}
+
+.text-suggestion {
+	text-align: center;
+	margin: 0% auto;
+}
+
+.text-suggestion textarea {
+	background-color: white;
+	padding: 6px;
+	margin: auto;
+}
+
+.button-save button {
+	padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 15px;
+    background-color:rgb(161, 173, 108);
+	border-color:rgb(161, 173, 108);
+    border-radius: 45px;
+    cursor: pointer;
+}
